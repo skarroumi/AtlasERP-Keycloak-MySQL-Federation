@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/org.keycloak/keycloak-server-spi
+    compileOnly group: 'org.keycloak', name: 'keycloak-server-spi', version: '15.0.2'
+
+    // https://mvnrepository.com/artifact/org.keycloak/keycloak-adapter-core
+//    implementation group: 'org.keycloak', name: 'keycloak-core', version: '15.0.2'
+
+    implementation group: 'org.keycloak', name: 'keycloak-common', version: '15.0.2'
+
+    // https://mvnrepository.com/artifact/org.keycloak/keycloak-model-api
+//    compileOnly group: 'org.keycloak', name: 'keycloak-model-jpa', version: '15.0.2'
+
+
+    // https://mvnrepository.com/artifact/mysql/mysql-connector-java
+    implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.27'
+
+
+}
+
+
